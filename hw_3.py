@@ -16,6 +16,7 @@ def is_divisible(m, n):
     Return: Boolean value, True if m is divisible by n, otherwise False
     '''
     if n == 0:
+        print("The denominator can not be 0.")
         return False
     if (m % n) == 0:
         return True
@@ -25,10 +26,10 @@ def is_divisible(m, n):
 
 # Test cases for is_divisible
 ## Provided for you... uncomment when you're done defining your function
-
+print("Test cases for Ex1")
 print (is_divisible(10, 5))  # This should return True
 print (is_divisible(18, 7))  # This should return False
-print (is_divisible(42, 0))  # What should this return?
+print (is_divisible(42, 0))  # What should this return? The denominator can not be 0. and False
 
 # ********** Exercise 2 ********** 
 
@@ -46,6 +47,8 @@ def not_equal(m,n):
         return True
 
 # Test cases for not_equal
+print("")
+print("Test cases for Ex2")
 print (not_equal(10, 5))  # This should return True
 print (not_equal(18, 18))  # This should return False
 
@@ -60,7 +63,10 @@ def multadd(a, b, c):
 angle_test = multadd((math.cos(math.pi/4)), 1/2, math.sin(math.pi/4)) 
 ceiling_test = multadd(math.log(12,7), 2, math.ceil(276/19))
 
+
 # Test Cases
+print("")
+print("Test cases for Ex3")
 # angle_test =
 print ("sin(pi/4) + cos(pi/4)/2 is:")
 print (angle_test)
@@ -82,6 +88,8 @@ def rand_divis_3():
         return False
 
 # Test Cases
+print("")
+print("Test cases for Ex4")
 for i in range(5):
     print(rand_divis_3())
 
